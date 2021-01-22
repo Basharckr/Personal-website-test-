@@ -13,25 +13,28 @@ $(function(){
             message:{
                 required:true,minlength:20
             }
-        }
-    })
-})
-
-$("#contactform").submit((e)=>{
-    e.preventDefault()
-    $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbyVNLLcdqMVDO6cdYcNRc-LgIkBWc9gFrkCHrFD6jC7nDhkL21IHOMI/exec",
-        data:$("#submit-form").serialize(),
-        method:"post",
-        success:function (response){
-            alert("Form submitted successfully")
-            window.location.reload()
-            //window.location.href="https://google.com"
         },
-        error:function (err){
-            alert("Something Error")
-
+        submitHandler:(contactform,e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyVNLLcdqMVDO6cdYcNRc-LgIkBWc9gFrkCHrFD6jC7nDhkL21IHOMI/exec",
+                data:$("#contactform").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+        
+                }
+            })
         }
     })
 })
+
+// $("#contactform").submit((e)=>{
+
+// })
 

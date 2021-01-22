@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 .body{
     margin: 0;
     padding: 0;
-
-}
+    background: rgb(148,134,129);
+}   
 .html{
     margin: 0;
     padding: 0;
@@ -14,25 +15,37 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
-.bg-home{
-    background: rgb(231,162,236);
-    background: linear-gradient(90deg, rgba(231,162,236,1) 27%, rgba(158,121,199,1) 100%);
-   
-}
-.bg-abt{
-    background: rgb(231,162,236);
-    background: linear-gradient(90deg, rgba(231,162,236,1) 27%, rgba(158,121,199,1) 100%);
-}
-.bg-ser{
-    background: rgb(231,162,236);
-    background: linear-gradient(90deg, rgba(231,162,236,1) 27%, rgba(158,121,199,1) 100%);
-}
-.bg-con{
-    background: rgb(231,162,236);
-    background: linear-gradient(90deg, rgba(231,162,236,1) 27%, rgba(158,121,199,1) 100%);
-}
+
 .error{
     color: red;
 }
+.card{
 
+    border-style: 5px solid black;
+    border-radius: 30px;
+    background: black;
+
+    border: none;
+    color: white;
+   
+}
+.bg1{
+    background-color: #060607;
+}
+.fbody{
+
+    
+    background: black;
+       
+}
+.card:hover{
+    background: #950740;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar-light .navbar-toggler {
+    margin-left: auto;
+}
